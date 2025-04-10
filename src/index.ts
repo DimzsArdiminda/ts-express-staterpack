@@ -1,12 +1,12 @@
 import dotenv from 'dotenv';
 import express from 'express';
-import rt from '../routers/mainRouter';
+import routes from '../routers/mainRouter';
 
 dotenv.config();
 
 const appServer = express()
 appServer.use(express.json())
-appServer.use(rt)
+appServer.use(routes)
 
 const PORT = process.env.PORT || 3000
 const HOST = process.env.IP || 'localhost'
