@@ -1,6 +1,6 @@
 ---
 
-# **Backend Project with TypeScript and Express**
+# **Backend Project with TypeScript Express and Prisma**
 
 Ini adalah aplikasi backend menggunakan TypeScript dan Express.js. Proyek ini mengatur server dasar dengan Express, mengatur routing, dan memanfaatkan environment variables menggunakan dotenv.
 
