@@ -1,23 +1,28 @@
 {
-	"name": "express-ts-starter",
-	"version": "1.0.0",
-	"description": "A simple Express.js starter template with TypeScript",
-	"main": "index.ts",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "ts-node-dev --respawn --transpile-only src/index.ts"
-	},
-	"dependencies": {
-		"@prisma/client": "6.10.1",
-		"cors": "^2.8.5",
-		"dotenv": "^16.4.7",
-		"express": "^5.1.0",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.8.3"
-	},
-	"devDependencies": {
-		"@types/express": "^5.0.1",
-		"prisma": "6.10.1",
-		"ts-node-dev": "^2.0.0"
-	}
+  "name": "express-ts-starter",
+  "version": "1.0.0",
+  "description": "A simple Express.js starter template with TypeScript",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "6.10.1",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.1",
+    "prisma": "6.10.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/DatabaseSeeder.ts"
+  }
 }
