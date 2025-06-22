@@ -1,9 +1,9 @@
-import rt from "./routes/route1";
-import rt2 from "./routes/route2";
+import rt from "./api/route";
+
+rt
 
 const routes = [
-    rt,
-    rt2, 
+    rt, 
 ];
 
 export default routes;
